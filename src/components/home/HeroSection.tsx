@@ -16,7 +16,16 @@ const HeroSection = ({
   buyCta = "Comprar Tempo",
 }: HeroSectionProps) => {
   return (
-    <section className="w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-20 px-4 md:px-8 lg:px-12 text-white">
+    <section
+      className="w-full py-20 px-4 md:px-8 lg:px-12 text-white"
+      style={{
+        background: `
+          linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url('/images/timeswap-bg.jpg') top center / 100% 500px no-repeat,
+          #1a202c
+        `,
+      }}
+    >
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="lg:w-1/2 space-y-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
